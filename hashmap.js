@@ -132,6 +132,7 @@ const HashMap = (initialSize = 16) => {
   };
 
   // Returns the number of key-value pairs stored in the hash map
+  // Note to self: Can also return 'size' 
   const length = () => {
     let keysCount = 0;
 
@@ -148,7 +149,7 @@ const HashMap = (initialSize = 16) => {
     buckets = new Array(initialSize).fill(null);
     size = 0;
   };
-
+  
   // Returns an array of all keys currently stored in the hash map
   const keys = () => {
     let keysArray = [];
